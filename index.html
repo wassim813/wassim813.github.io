@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wassim Le Rebeu</title>
+	<link rel="shortcut icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/b3e260b8-2d53-40ad-8e95-fbbd13024e3e-profile_image-70x70.png" type="image/x-icon">
+	<script type="text/javascript">
+	  	if (window.matchMedia("(max-width: 700px)").matches) {
+	    	window.location.replace("mobile/index.html");
+	  	}
+	</script>
+	<style type="text/css">
+		:root{
+			--txt-color: whitesmoke;
+		}
+		body{
+			overflow: hidden;
+			color: var(--txt-color);
+			margin: 10px;
+			font-family: "Inter","Roobert","Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 20px;
+		}
+		.fisrt-prsn{
+			border-radius: 8px;
+			padding: 5px;
+		}
+		.nav-bar{
+			position: fixed;
+			text-align: center;
+			width: 190px;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+		.nav-bar div a{
+			display: block;
+			margin-top: 15px;
+			text-decoration: none;
+			color: var(--txt-color);
+		}
+		.body-part{
+			overflow-y: scroll;
+			display: block;
+			margin-left: 210px;
+			background-color: rgba(0, 0, 0, 0.7);
+			width: calc(100% - 220px);
+		}
+		.body-part::-webkit-scrollbar{
+			/*width: 10px;
+			height: 8px;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-radius: 0 16px 16px 0;*/
+			visibility: hidden;
+		}
+		.body-part::-webkit-scrollbar-thumb{
+			/*background-color: rgba(29, 29, 33, 0.5);
+			border-radius: 0 16px 16px 0;*/
+			visibility: hidden;
+		}
+
+
+
+		#mail:hover{
+			text-decoration: underline;
+		}
+		#YPTB{
+			text-decoration: none;
+			color: var(--txt-color);
+		}
+		#YPTB:hover{
+			text-decoration: underline;
+		}
+	</style>	
+</head>
+<body>
+	<script type="text/javascript">
+		var body = document.body,
+		    html = document.documentElement;
+
+		var height = Math.max( body.scrollHeight, body.offsetHeight, 
+		                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+		console.log(height)
+	</script>
+	<div id="body">
+		<div class="nav-bar fisrt-prsn">
+			<div style="text-align: left; margin-left: 10px;">
+				<a href="https://www.youtube.com/@wassimlerebeu" target="_blank" style="margin-top: 0;"><img src="https://www.youtube.com/s/desktop/b926992e/img/favicon_96x96.png" width="64" style="vertical-align: middle;"><p style='display: inline; margin-left: 10px;'>YouTube</p></a>
+
+				<a href="https://www.tiktok.com/@wassimlerebeu7_" target="_blank" style="margin-top: 5px; "><img src="https://sf-tb-sg.ibytedtos.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png" width="64" style="border-radius: 16px;vertical-align: middle;"><p style='display: inline; margin-left: 10px;'>TikTok</p></a>
+
+				<a href="https://www.twitch.tv/wassimlerebeu" target="_blank"><img src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png" width="64" style="vertical-align: middle;"><p style='display: inline; margin-left: 10px;'>Twitch</p></a>
+
+				<!-- <a href="https://discord.gg/" target="_blank"><img src="https://www.airofmelty.fr/wp-content/uploads/airofmelty/2022/03/media-1719.jpg" width="64" style="border-radius: 16px;vertical-align: middle;"><p style='display: inline; margin-left: 10px;'>Discord</p></a> -->
+
+				<a href="https://streamlabs.com/wassimlerebeu/tip" target="_blank"><img src="https://pngimg.com/uploads/euro_sign/euro_sign_PNG21579.png" width="64" style="border-radius: 16px;vertical-align: middle;background-color: var(--txt-color);"><p style='display: inline; margin-left: 10px;'>Don</p></a>
+			</div>
+		</div>
+		<div class="body-part fisrt-prsn" >
+			<h1 style="text-align: center;">Wassim Le Rebeu</h1>
+			<p style="text-align: center;">MERCI LES 1K FOLLOWS 🍗✨ - Pro : <span id="mail" style="cursor: pointer;">wassimtjrla7@gmail.com</span></p>
+			<iframe src="https://player.twitch.tv/?channel=gotyk1&parent=" frameborder="0" allowfullscreen="true" scrolling="no" height="360" width="720" style="margin-left: calc((100% - 720px)/ 2);" id="itwitch"></iframe>
+			<p style="text-align: center;">Rediffussion sur <a href="https://www.youtube.com/playlist?list=PL40pNiMiotAGz8kdGnJpIFAWcX6v693Fh" id="YPTB">YouTube</a> :</p>
+			<iframe width="720" height="360" src="https://www.youtube.com/embed?list=PL40pNiMiotAGz8kdGnJpIFAWcX6v693Fh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="margin-left: calc((100% - 720px)/ 2);"></iframe>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	const bodyheight = document.querySelector(".nav-bar")
+	bodyheight.style.height = (height - 30).toString()+"px";
+	console.log(height.toString()+"px")
+	// document.querySelector("#body").style.height = (height - 20).toString()+"px";
+	document.querySelector(".body-part").style.height = (height - 30).toString()+"px";
+</script>
+<script type="text/javascript">
+		BCr = Math.floor(Math.random() * 100)
+	if (BCr >= 0 && BCr <= 3) {
+		document.body.style.backgroundColor = "#1f1f23"
+	}
+	if (BCr > 3 && BCr <=26) {
+		document.body.style.backgroundColor = "#FF3333"
+	}
+	if (BCr > 26 && BCr <= 50) {
+		document.body.style.backgroundColor = "#FFF633"
+	}
+	if (BCr > 50 && BCr <= 74) {
+		document.body.style.backgroundColor = "#55FF33"
+	}
+	if (BCr > 74 && BCr <= 99) {
+		document.body.style.backgroundColor = "#3339FF"
+	}
+</script>
+<script type="text/javascript">
+	const span = document.getElementById("mail");
+
+	span.onclick = function() {
+	  document.execCommand("copy");
+	}
+
+	span.addEventListener("copy", function(event) {
+	  event.preventDefault();
+	  if (event.clipboardData) {
+	    event.clipboardData.setData("text/plain", span.textContent);
+	    console.log(event.clipboardData.getData("text"))
+	    alert("Email Copié!")
+	  }
+	});
+</script>
+</html>

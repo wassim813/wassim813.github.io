@@ -5,11 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wassim Le Rebeu</title>
 	<link rel="shortcut icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/b3e260b8-2d53-40ad-8e95-fbbd13024e3e-profile_image-70x70.png" type="image/x-icon">
-<!-- 	<script type="text/javascript">
-	  	if (window.matchMedia("(max-width: 700px)").matches) {
-	    	window.location.replace("mobile/index.html");
-	  	}
-	</script> -->
 	<style type="text/css">
 		:root{
 			--txt-color: whitesmoke;
@@ -44,17 +39,16 @@
 			margin-left: 210px;
 			background-color: rgba(0, 0, 0, 0.7);
 			width: calc(100% - 220px);
+
+			-ms-overflow-style: none;
+  			scrollbar-width: 0;
 		}
 		.body-part::-webkit-scrollbar{
-			/*width: 10px;
-			height: 8px;
-			background-color: rgba(0, 0, 0, 0.7);
-			border-radius: 0 16px 16px 0;*/
 			visibility: hidden;
+			display: none;
+
 		}
 		.body-part::-webkit-scrollbar-thumb{
-			/*background-color: rgba(29, 29, 33, 0.5);
-			border-radius: 0 16px 16px 0;*/
 			visibility: hidden;
 		}
 
@@ -69,6 +63,14 @@
 		}
 		#YPTB:hover{
 			text-decoration: underline;
+		}
+		#Agorare-div{
+			background-color: blue;
+			border-radius: 8px 8px 0 0;
+
+			margin-top: -32px;
+			margin-left: -5px;
+			margin-right: -5px;
 		}
 	</style>	
 </head>
@@ -98,6 +100,9 @@
 			</div>
 		</div>
 		<div class="body-part fisrt-prsn" >
+			<div id="Agorare-div">
+				<h1 style="text-align: center;">Rejoignez <a href="https://agorare.fr/profile?username=wassimlerebeu" style="color: var(--txt-color);">Agorare</a> !</h1>
+			</div>
 			<h1 style="text-align: center;">Wassim Le Rebeu</h1>
 			<p style="text-align: center;">MERCI LES 1K FOLLOWS 🍗✨ - Pro : <span id="mail" style="cursor: pointer;">wassimtjrla7@gmail.com</span></p>
 			<iframe src="https://player.twitch.tv/?channel=wassimlerebeu&parent=wassim813.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="360" width="720" style="margin-left: calc((100% - 720px)/ 2);" id="itwitch"></iframe>
@@ -110,28 +115,10 @@
 	const bodyheight = document.querySelector(".nav-bar")
 	bodyheight.style.height = (height - 30).toString()+"px";
 	console.log(height.toString()+"px")
-	// document.querySelector("#body").style.height = (height - 20).toString()+"px";
 	document.querySelector(".body-part").style.height = (height - 30).toString()+"px";
-</script>
-<!-- <script type="text/javascript">
-		BCr = Math.floor(Math.random() * 100)
-	if (BCr >= 0 && BCr <= 3) {
-		document.body.style.backgroundColor = "#1f1f23"
-	}
-	if (BCr > 3 && BCr <=26) {
-		document.body.style.backgroundColor = "#FF3333"
-	}
-	if (BCr > 26 && BCr <= 50) {
-		document.body.style.backgroundColor = "#FFF633"
-	}
-	if (BCr > 50 && BCr <= 74) {
-		document.body.style.backgroundColor = "#55FF33"
-	}
-	if (BCr > 74 && BCr <= 99) {
-		document.body.style.backgroundColor = "#3339FF"
-	}
-</script> -->
-<script type="text/javascript">
+
+
+
 	const span = document.getElementById("mail");
 
 	span.onclick = function() {
